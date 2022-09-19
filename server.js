@@ -9,7 +9,7 @@ const userRoutes = require("./routes/userRoutes");
 const paymentRoutes = require("./routes/Payments");
 
 //get request for home
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
 	res.send("Hello world");
 });
 const corsOptions = {
