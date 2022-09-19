@@ -1,0 +1,38 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"engines": {
+		"node": "14.x"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.27.2",
+		"bcrypt": "^5.0.1",
+		"chapa-node": "^1.0.6",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.2",
+		"ejs": "^3.1.8",
+		"express": "^4.18.1",
+		"helmet": "^6.0.0",
+		"joi": "^17.6.0",
+		"js-sha256": "^0.9.0",
+		"jsonwebtoken": "^8.5.1",
+		"jwt-then": "^1.0.1",
+		"mongoose": "^6.5.0",
+		"morgan": "^1.10.0",
+		"mysql": "^2.18.1",
+		"node-fetch": "^3.2.10",
+		"nodemailer": "^6.7.8",
+		"nodemon": "^2.0.19",
+		"sequelize": "^6.21.3",
+		"twilio": "^3.82.0"
+	}
+}
