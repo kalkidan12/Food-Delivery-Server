@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 	res.send("Hello world");
 });
 const corsOptions = {
-	origin: "http://localhost:3000",
+	origin: process.env.FRONTEND_BASE_URL,
 	credentials: true,
 	methods: "GET, PUT",
 };
