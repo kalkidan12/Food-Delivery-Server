@@ -3,8 +3,7 @@ require("dotenv").config();
 
 const conn = async () => {
 	try {
-		// const uri = process.env.MONGODB_URL;
-		const uri = "mongodb://localhost:27017/kalkidan";
+		const uri = process.env.MONGODB_URL;
 		const connection = mongoose.connect(uri, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
