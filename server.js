@@ -11,7 +11,7 @@ const corsOptions = {
 	origin: process.env.FRONTEND_BASE_URL,
 	credentials: true,
 
-	"Access-Control-Allow-Origin": "*",
+	AccessControlAllowOrigin: "*",
 	methods: "GET, PUT",
 };
 
