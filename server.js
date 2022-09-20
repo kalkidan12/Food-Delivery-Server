@@ -8,8 +8,8 @@ require("dotenv").config();
 const app = express();
 
 const corsOptions = {
-	origin: process.env.FRONTEND_BASE_URL,
-	credentials: true,
+	origin: "*",
+	credentials: true, //access-control-allow-credentials:true
 	methods: "GET, PUT",
 };
 
