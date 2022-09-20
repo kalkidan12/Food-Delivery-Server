@@ -8,8 +8,10 @@ require("dotenv").config();
 const app = express();
 
 const corsOptions = {
-	origin: "*",
-	credentials: true, //access-control-allow-credentials:true
+	origin: process.env.FRONTEND_BASE_URL,
+	credentials: true,
+
+	"Access-Control-Allow-Origin": "*",
 	methods: "GET, PUT",
 };
 
@@ -25,6 +27,11 @@ app.use("/api/payment", paymentRoutes);
 conn();
 //get request for home
 app.get("/", (req, res) => {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header(
+		"Access-Control-Allow-Headers",
+		"Origin, X-Requested-With, Content-Type, Accept",
+	);
 	res.send("Hello world");
 });
 const PORT = process.env.PORT || 4000;
